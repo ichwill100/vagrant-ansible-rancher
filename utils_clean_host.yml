@@ -12,4 +12,4 @@
   hosts: "{{ NAME_HOST }}"
   gather_facts: no
   roles:
-  - AdopteUnOps.rancher-clean-docker-host
+  - {role: AdopteUnOps.rancher-clean-docker-host}
