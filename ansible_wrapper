@@ -1,7 +1,7 @@
 #!/bin/bash -x
 SCRIPTPATH=`dirname $0`
-export ANSIBLE_HOSTS="$SCRIPTPATH/production/inventory"
 #export ANSIBLE_HOSTS="$SCRIPTPATH/sample/inventory"
+export ANSIBLE_HOSTS="$SCRIPTPATH/.vagrant/provisioners/ansible/inventory"
 export ANSIBLE_CONFIG=$SCRIPTPATH/ansible.cfg
 if [ -s $SCRIPTPATH/config_ssh ]
 then
