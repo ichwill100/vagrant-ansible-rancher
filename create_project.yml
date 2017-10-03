@@ -1,0 +1,15 @@
+---
+#./ansible-playbook_wrapper create_project.yml -K -e "NAME_PROJECT=myproject"
+- hosts: "{{ NAME_PROJECT}}[0]"
+  gather_facts: no
+  roles:
+  - {role: AdopteUnOps.rancher-create-project, tags: rancher-create-project}
+
+- hosts: "{{ NAME_PROJECT }}"
+  roles:
+  - {role: AdopteUnOps.rancher-add-host, tags: add-host}
+
+- hosts: "{{ NAME_PROJECT}}[0]"
+  gather_facts: no
+  roles:
+  - {role: AdopteUnOps.rancher-install-stack, stack_name: janitor, tags: install-stack}

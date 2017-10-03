@@ -1,0 +1,15 @@
+galaxy_info:
+  author: AdopteUnOps
+  description: Install kernel meta packages including kernel-extras (handle reboot)
+  license: Apache
+
+  min_ansible_version: 2.3
+
+  platforms:
+   - name: Ubuntu
+
+  galaxy_tags:
+  - kernel
+  - ubuntu
+
+dependencies: []

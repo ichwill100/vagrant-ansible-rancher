@@ -1,0 +1,29 @@
+*.swp
+*.swo
+*~
+.idea
+*.iml
+
+# ansible plugins binary
+*.pyc
+
+#binaries
+*.gz
+*.tgz
+*.bzip
+*.bz2
+*.zip
+*.iso
+*.tar
+
+#local ssh config
+config_ssh
+
+*.retry
+
+.vagrant
+*.log
+
+roles/AdopteUnOps.*
+LICENSE
+ubuntu-xenial-16.04-cloudimg-console.log
