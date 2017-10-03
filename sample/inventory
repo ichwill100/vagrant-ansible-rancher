@@ -1,9 +1,7 @@
 [rancher-master]
 #host-1
-rancher-master1
 
 [my-first-project]
 #host3
 #host4
-rancher-host1
 
